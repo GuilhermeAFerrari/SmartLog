@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BGB6vA5BRvMXSiEZoRNivs3+59h7DGwmPpSqmnAO13I=",
+  "Source": "SmartLog.API",
+  "BasePath": "_content/SmartLog.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

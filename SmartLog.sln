@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLog.API", "SmartLog.API\SmartLog.API.csproj", "{8872365A-5B04-4A1D-9C1A-CCF132795DDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLog.Domain", "SmartLog.Domain\SmartLog.Domain.csproj", "{5E771D06-D515-4C91-8D95-68D48CA8A838}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8872365A-5B04-4A1D-9C1A-CCF132795DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8872365A-5B04-4A1D-9C1A-CCF132795DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8872365A-5B04-4A1D-9C1A-CCF132795DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8872365A-5B04-4A1D-9C1A-CCF132795DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E771D06-D515-4C91-8D95-68D48CA8A838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E771D06-D515-4C91-8D95-68D48CA8A838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E771D06-D515-4C91-8D95-68D48CA8A838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E771D06-D515-4C91-8D95-68D48CA8A838}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
