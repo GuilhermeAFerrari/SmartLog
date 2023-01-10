@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../SmartLog.Domain/SmartLog.Domain.csproj" />
+    <ProjectReference Include="../SmartLog.Infra.IoC/SmartLog.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>

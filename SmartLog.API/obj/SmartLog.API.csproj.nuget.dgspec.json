@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Domain/SmartLog.Domain.csproj": {
-                "projectPath": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Domain/SmartLog.Domain.csproj"
+              "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.IoC/SmartLog.Infra.IoC.csproj": {
+                "projectPath": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.IoC/SmartLog.Infra.IoC.csproj"
               }
             }
           }
@@ -96,6 +96,129 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.Data/SmartLog.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.Data/SmartLog.Infra.Data.csproj",
+        "projectName": "SmartLog.Infra.Data",
+        "projectPath": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.Data/SmartLog.Infra.Data.csproj",
+        "packagesPath": "/home/guilherme/.nuget/packages/",
+        "outputPath": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/guilherme/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Domain/SmartLog.Domain.csproj": {
+                "projectPath": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Domain/SmartLog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.IoC/SmartLog.Infra.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.IoC/SmartLog.Infra.IoC.csproj",
+        "projectName": "SmartLog.Infra.IoC",
+        "projectPath": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.IoC/SmartLog.Infra.IoC.csproj",
+        "packagesPath": "/home/guilherme/.nuget/packages/",
+        "outputPath": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.IoC/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/guilherme/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Domain/SmartLog.Domain.csproj": {
+                "projectPath": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Domain/SmartLog.Domain.csproj"
+              },
+              "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.Data/SmartLog.Infra.Data.csproj": {
+                "projectPath": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.Infra.Data/SmartLog.Infra.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

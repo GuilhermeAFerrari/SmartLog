@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SmartLog.Domain.Entities;
 using SmartLog.Domain.Enum;
+using SmartLog.Domain.Interfaces;
 
 namespace SmartLog.API.Controllers;
 
@@ -8,16 +9,16 @@ namespace SmartLog.API.Controllers;
 [Route("api/[controller]")]
 public class LogController : ControllerBase
 {
-    [HttpGet]
-    public IEnumerable<Log> Get()
-    {
-        var logs = new List<Log>()
-        {
-            new Log() { IdSecondary = Guid.NewGuid(), Level = Level.High, Message = "An critical error with core of system" },
-            new Log { IdSecondary = Guid.NewGuid(), Level = Level.High, Message = "An critical error with core of system" },
-            new Log { IdSecondary = Guid.NewGuid(), Level = Level.High, Message = "An critical error with core of system" }
-        };
+    private readonly ILogRepository _logRepository;
 
-        return logs.ToList();
+    public LogController(ILogRepository logRepository)
+    {
+        _logRepository = logRepository;
+    }
+
+    [HttpGet]
+    public async Task<IEnumerable<Log>> Get()
+    {
+        return await _logRepository.GetLogsAsync();
     }
 }
