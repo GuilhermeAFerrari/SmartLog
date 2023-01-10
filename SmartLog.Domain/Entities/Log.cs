@@ -8,6 +8,6 @@ public class Log
     public Guid IdSecondary { get; set; }
     public string Message { get; set; } = String.Empty;
     public Level Level { get; set; }
-    public DateTime Date => DateTime.Now;
-    public bool Active => true;
+    public DateTime Date { get; set; }
+    public bool Active { get; set; }
 }

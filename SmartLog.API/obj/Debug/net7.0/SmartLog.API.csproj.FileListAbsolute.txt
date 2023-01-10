@@ -1,3 +1,10 @@
+/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.csproj.AssemblyReference.cache
+/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.GeneratedMSBuildEditorConfig.editorconfig
+/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.AssemblyInfoInputs.cache
+/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.AssemblyInfo.cs
+/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.csproj.CoreCompileInputs.cache
+/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.MvcApplicationPartsAssemblyInfo.cs
+/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.MvcApplicationPartsAssemblyInfo.cache
 /home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/bin/Debug/net7.0/appsettings.Development.json
 /home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/bin/Debug/net7.0/appsettings.json
 /home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/bin/Debug/net7.0/SmartLog.API
@@ -12,13 +19,6 @@
 /home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/bin/Debug/net7.0/SmartLog.Domain.dll
 /home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/bin/Debug/net7.0/SmartLog.Domain.pdb
-/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.csproj.AssemblyReference.cache
-/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.GeneratedMSBuildEditorConfig.editorconfig
-/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.AssemblyInfoInputs.cache
-/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.AssemblyInfo.cs
-/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.csproj.CoreCompileInputs.cache
-/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.MvcApplicationPartsAssemblyInfo.cs
-/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/SmartLog.API.MvcApplicationPartsAssemblyInfo.cache
 /home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/staticwebassets/msbuild.SmartLog.API.Microsoft.AspNetCore.StaticWebAssets.props
 /home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/staticwebassets/msbuild.build.SmartLog.API.props
 /home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.SmartLog.API.props
