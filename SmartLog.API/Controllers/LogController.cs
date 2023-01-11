@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using SmartLog.Application.DTOs;
+using SmartLog.Application.Interfaces;
 using SmartLog.Domain.Entities;
-using SmartLog.Domain.Enum;
-using SmartLog.Domain.Interfaces;
 
 namespace SmartLog.API.Controllers;
 
@@ -9,16 +9,38 @@ namespace SmartLog.API.Controllers;
 [Route("api/[controller]")]
 public class LogController : ControllerBase
 {
-    private readonly ILogRepository _logRepository;
+    private readonly ILogService _logService;
 
-    public LogController(ILogRepository logRepository)
+    public LogController(ILogService logRepository)
     {
-        _logRepository = logRepository;
+        _logService = logRepository;
     }
 
     [HttpGet]
-    public async Task<IEnumerable<Log>> Get()
+    public async Task<IEnumerable<LogDTO>> Get()
     {
-        return await _logRepository.GetLogsAsync();
+        return await _logService.GetLogsAsync();
+    }
+
+    [HttpGet("{id:Guid}", Name = "GetLog")]
+    public async Task<ActionResult<LogDTO>> Get(Guid id)
+    {
+        var category = await _logService.GetLogAsync(id);
+
+        if (category is null)
+            return NotFound("Log not found");
+
+        return Ok(category);
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> Post([FromBody] LogDTO log)
+    {
+        if (log is null)
+            return BadRequest("Invalid data");
+
+        await _logService.AddLogAsync(log);
+
+        return new CreatedAtRouteResult("GetLog", new { id = log.Id_secondary }, log);
     }
 }

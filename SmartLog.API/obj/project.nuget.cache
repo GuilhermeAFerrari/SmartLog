@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "AKBiXrH90T36SXD/jYnG7tcfy5ZWFp58nowMDbDVpHptTRWCY6dhDERSPeUnkYRXrRaW6fbNUbblEb+D3hYPTw==",
+  "dgSpecHash": "lDU+SYVH3LjhJFGWaNGDn8SJmZ/sKwwv/P1qo+lXfj1BZc1liuA+1xTvrFfit+0erogfc5BePndQJkrjxhj8+A==",
   "success": true,
   "projectFilePath": "/home/guilherme/Documentos/Projects/PersonalProjects/SmartLog/SmartLog.API/SmartLog.API.csproj",
   "expectedPackageFiles": [
+    "/home/guilherme/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/home/guilherme/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "/home/guilherme/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/home/guilherme/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/home/guilherme/.nuget/packages/microsoft.aspnetcore.openapi/7.0.1/microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
     "/home/guilherme/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "/home/guilherme/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/home/guilherme/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/guilherme/.nuget/packages/microsoft.data.sqlclient/5.0.1/microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "/home/guilherme/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.0.1/microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "/home/guilherme/.nuget/packages/microsoft.entityframeworkcore/7.0.1/microsoft.entityframeworkcore.7.0.1.nupkg.sha512",

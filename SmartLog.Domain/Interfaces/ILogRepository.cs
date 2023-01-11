@@ -5,5 +5,6 @@ namespace SmartLog.Domain.Interfaces;
 public interface ILogRepository
 {
     Task<IEnumerable<Log>> GetLogsAsync();
-    Task<Log> CreateLogAsync(Log log);
+    Task CreateLogAsync(Log log);
+    Task<Log> GetLogAsync(Guid id);
 }

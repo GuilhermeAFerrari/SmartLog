@@ -14,15 +14,19 @@ public class LogRepository : ILogRepository
         _context = context;
     }
 
-    public async Task<Log> CreateLogAsync(Log log)
+    public async Task CreateLogAsync(Log log)
     {
         _context.Add(log);
         await _context.SaveChangesAsync();
-        return log;
     }
 
     public async Task<IEnumerable<Log>> GetLogsAsync()
     {
         return await _context.Log.ToListAsync();
+    }
+
+    public async Task<Log> GetLogAsync(Guid id)
+    {
+        return await _context.Log.FirstOrDefaultAsync(x => x.Id_secondary == id);
     }
 }

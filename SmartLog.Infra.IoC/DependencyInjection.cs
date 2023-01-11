@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SmartLog.Application.Mappings;
+using SmartLog.Application.Interfaces;
+using SmartLog.Application.Services;
 using SmartLog.Domain.Interfaces;
 using SmartLog.Infra.Data.Context;
 using SmartLog.Infra.Data.Repository;
@@ -16,6 +19,10 @@ public static class DependencyInjection
         );
 
         services.AddScoped<ILogRepository, LogRepository>();
+
+        services.AddScoped<ILogService, LogService>();
+
+        services.AddAutoMapper(typeof(DTOToEntityLog));
 
         return services;
     }

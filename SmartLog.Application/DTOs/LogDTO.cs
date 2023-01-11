@@ -1,13 +1,11 @@
 using SmartLog.Domain.Enum;
 
-namespace SmartLog.Domain.Entities;
+namespace SmartLog.Application.DTOs;
 
-public class Log
+public class LogDTO
 {
-    public int Id { get; set; }
     public Guid Id_secondary { get; set; }
     public string Message { get; set; } = string.Empty;
     public Level Level { get; set; }
     public DateTime Date { get; set; }
-    public bool Active { get; set; }
 }
