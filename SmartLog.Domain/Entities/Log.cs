@@ -6,7 +6,7 @@ public class Log
 {
     public int Id { get; set; }
     public Guid Id_secondary { get; set; }
-    public string Message { get; set; } = string.Empty;
+    public required string Message { get; set; }
     public Level Level { get; set; }
     public DateTime Date { get; set; }
     public bool Active { get; set; }

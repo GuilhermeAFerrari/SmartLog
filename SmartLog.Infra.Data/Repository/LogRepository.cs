@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using SmartLog.Domain.Interfaces;
 using SmartLog.Domain.Entities;
 using SmartLog.Infra.Data.Context;

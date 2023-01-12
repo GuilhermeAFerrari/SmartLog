@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLog.Infra.IoC", "Smart
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLog.Application", "SmartLog.Application\SmartLog.Application.csproj", "{30B98C73-01A4-4178-A1E4-9DA0EFBFF048}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLog.UI", "SmartLog.UI\SmartLog.UI.csproj", "{344EF617-2588-4F35-B5B1-4BED3C923B43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{30B98C73-01A4-4178-A1E4-9DA0EFBFF048}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30B98C73-01A4-4178-A1E4-9DA0EFBFF048}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30B98C73-01A4-4178-A1E4-9DA0EFBFF048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{344EF617-2588-4F35-B5B1-4BED3C923B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{344EF617-2588-4F35-B5B1-4BED3C923B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{344EF617-2588-4F35-B5B1-4BED3C923B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{344EF617-2588-4F35-B5B1-4BED3C923B43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

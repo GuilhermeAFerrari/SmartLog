@@ -28,7 +28,7 @@ public class LogController : ControllerBase
         var category = await _logService.GetLogAsync(id);
 
         if (category is null)
-            return NotFound("Log not found");
+            return NoContent();
 
         return Ok(category);
     }
