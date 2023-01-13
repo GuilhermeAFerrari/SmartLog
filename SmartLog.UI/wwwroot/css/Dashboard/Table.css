@@ -1,0 +1,27 @@
+#logs {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#logs td,
+#logs th {
+    border: 1px solid whitesmoke;
+    padding: 8px;
+    color: whitesmoke;
+}
+
+#logs tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+#logs tr:hover {
+    background-color: whitesmoke;
+}
+
+#logs th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #008B8B;
+    color: whitesmoke;
+}

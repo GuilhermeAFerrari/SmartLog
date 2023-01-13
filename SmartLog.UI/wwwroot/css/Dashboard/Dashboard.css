@@ -1,0 +1,62 @@
+@import url('../Fonts.css');
+
+* {
+    background-color: #282832;
+    margin: 0;
+    font-family: Quicksand;
+}
+
+.content-title {
+    color: whitesmoke;
+    text-align: center;
+    padding: 2% 0 4% 0;
+}
+
+.content-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-data-table {
+    width: 70%;
+    display: flex;
+    padding: 0 2% 0 0;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.content-data-graphs {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.graphs-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphs {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.high {
+    background: #ff4040;
+}
+
+.mid {
+    background: #ffa500;
+}
+
+.low {
+    background: #3CB371;
+}
+
+.level-text {
+    background: none;
+}

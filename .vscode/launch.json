@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/SmartLog.API/bin/Debug/net7.0/SmartLog.API.dll",
+            "program": "${workspaceFolder}/SmartLog.UI/bin/Debug/net7.0/SmartLog.UI.dll",
             "args": [],
             "cwd": "${workspaceFolder}/SmartLog.API",
             "stopAtEntry": false,

@@ -1,15 +1,23 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using SmartLog.Application.Interfaces;
 using SmartLog.UI.Models;
 
 namespace SmartLog.UI.Controllers;
 
 public class DashboardController : Controller
 {
-    public IActionResult Index()
+    private readonly ILogService _logService;
+    public DashboardController(ILogService logService)
     {
-        // TODO: Consultar API Back-end Rota: Get All
-        return View();
+        _logService = logService;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Index()
+    {
+        var logs = await _logService.GetLogsAsync();
+        return View(logs);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
