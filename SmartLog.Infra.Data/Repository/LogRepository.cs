@@ -23,11 +23,25 @@ public class LogRepository : ILogRepository
 
     public async Task<IEnumerable<Log>> GetLogsAsync()
     {
-        return await _context.Log.ToListAsync();
+        var logs = await _context.Log.ToListAsync();
+        return logs.OrderBy(x => x.Level);
     }
 
     public async Task<Log> GetLogAsync(Guid id)
     {
         return await _context.Log.FirstOrDefaultAsync(x => x.Id_secondary == id);
+    }
+
+    public async Task<Counter> GetCountersAsync()
+    {
+        var logs = await GetLogsAsync();
+        var counter = new Counter()
+        {
+            High = logs.Count(x => x.Level == Domain.Enum.Level.High),
+            Mid = logs.Count(x => x.Level == Domain.Enum.Level.Middle),
+            Low = logs.Count(x => x.Level == Domain.Enum.Level.Low)
+        };
+
+        return counter;
     }
 }

@@ -41,8 +41,19 @@
 
 .graphs {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 8rem;
+    height: 8rem;
+}
+
+.graphs-min {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.graphs-min-col {
+    display: flex;
+    justify-content: center;
 }
 
 .high {
@@ -59,4 +70,6 @@
 
 .level-text {
     background: none;
+    font-size: 22px;
+    font-weight: 600;
 }

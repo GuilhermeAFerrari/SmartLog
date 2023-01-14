@@ -7,4 +7,5 @@ public interface ILogRepository
     Task<IEnumerable<Log>> GetLogsAsync();
     Task CreateLogAsync(Log log);
     Task<Log> GetLogAsync(Guid id);
+    Task<Counter> GetCountersAsync();
 }

@@ -1,5 +1,5 @@
-﻿@model IEnumerable<SmartLog.Application.DTOs.LogDTO>
-
+﻿@model SmartLog.UI.Models.DashboardViewModel
+@using SmartLog.Domain.Enum
 @{
     ViewData["Title"] = "SmartLog - Dashboard";
 }
@@ -15,27 +15,37 @@
 
         <div class="content-data-graphs">
             <div class="graphs high graphs-text">
-                <label class="level-text">5 logs</label>
+                <label class="level-text">@Model.Counters.High Logs</label>
             </div>
             <div class="graphs mid graphs-text">
-                <label class="level-text">3 logs</label>
+                <label class="level-text">@Model.Counters.Mid Logs</label>
             </div>
             <div class="graphs low graphs-text">
-                <label class="level-text">1 log</label>
+                <label class="level-text">@Model.Counters.Low Logs</label>
             </div>
         </div>
 
         <div class="content-data-table">
             <table id="logs">
             <tr>
-                <th>@Html.DisplayNameFor(model => model.Level)</th>
-                <th>@Html.DisplayNameFor(model => model.Date)</th>
-                <th>@Html.DisplayNameFor(model => model.Message)</th>
+                <th>Level</th>
+                <th>Date</th>
+                <th>Message</th>
             </tr>
-            @foreach (var item in Model)
+            @foreach (var item in Model.Log)
             {
                 <tr>
-                    <td>@Html.DisplayFor(modelItem => item.Level)</td>
+                    <td class="graphs-min-col ">
+                        @if(item.Level == Level.High){
+                            <div class="graphs-min high"></div>
+                        }
+                        @if(item.Level == Level.Middle){
+                            <div class="graphs-min mid"></div>
+                        }
+                        @if(item.Level == Level.Low){
+                            <div class="graphs-min low"></div>
+                        }
+                    </td>
                     <td>@Html.DisplayFor(modelItem => item.Date)</td>
                     <td>@Html.DisplayFor(modelItem => item.Message)</td>
                 </tr>

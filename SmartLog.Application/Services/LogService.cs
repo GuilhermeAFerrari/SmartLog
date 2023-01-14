@@ -34,4 +34,9 @@ public class LogService : ILogService
         var logs = await _logRepository.GetLogsAsync();
         return _autoMapper.Map<IEnumerable<LogDTO>>(logs);
     }
+
+    public async Task<Counter> GetCountersAsync()
+    {
+        return await _logRepository.GetCountersAsync();
+    }
 }
