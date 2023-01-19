@@ -31,6 +31,9 @@
                 <th>Level</th>
                 <th>Date</th>
                 <th>Message</th>
+                <th>StackTrace</th>
+                <th>Request</th>
+                <th>Response</th>
             </tr>
             @foreach (var item in Model.Log)
             {
@@ -48,6 +51,9 @@
                     </td>
                     <td>@Html.DisplayFor(modelItem => item.Date)</td>
                     <td>@Html.DisplayFor(modelItem => item.Message)</td>
+                    <td>@Html.DisplayFor(modelItem => item.StackTrace)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Request)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Response)</td>
                 </tr>
             }
             </table>
